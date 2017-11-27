@@ -80,11 +80,22 @@ function draw() {
 
     if(this.endAngle() > 2 * Math.PI){
         if(this.input){
+            context.beginPath();
+            context.moveTo(canvas.width - 8, canvas.height);
+            var x1 = canvas.width - 18;
+            var y1 = canvas.height - 18;
+            context.lineTo(x1,y1);
+            context.moveTo(canvas.width - 8, canvas.height);
+            var x2 = x1 + 18;
+            var y2 = canvas.height - 18;
+            context.lineTo(x2, y2);
+            context.stroke();
             this.input.classList.remove("input-block_hide");
         }
         return
     }
-requestAnimationFrame(draw.bind(this))
+
+    requestAnimationFrame(draw.bind(this))
 }
 
 /**
@@ -119,6 +130,10 @@ function checkNumber(number) {
     }
 }
 
+/**
+ * @description Запсись числа в итоговый инпут с суммой
+ * @param number
+ */
 function putSum(number) {
     inputSum.classList.remove("number_wrong");
     var value = inputSum.value;
@@ -132,6 +147,10 @@ function putSum(number) {
 }
 
 
+/**
+ * @description Проверка суммы
+ * @param number
+ */
 function checkSumNumber(number) {
     if(+number !== sumNumber){
         inputSum.classList.add("number_wrong");

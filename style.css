@@ -13,20 +13,20 @@
 	display: inline-block;
 }
 .image-cover{
-	width: 875px;
+position: static;
 }
 
 body{
 }
 .canvas-first{
 	position: relative;
-	left: 507px;
+	left: 530px;
 	top: -62px;
 }
 
 .canvas-second{
 	position: relative;
-	left: 468px;
+	left: 480px;
 	top:-62px;
 }
 .input-block{
@@ -53,12 +53,12 @@ body{
 .first-input_position{
 	position: relative;
 	top: -250px;
-	left: 655px;
+	left: 690px;
 }
 .second-input_position{
 	position: relative;
 	top: -180px;
-	left: 570px;
+	left: 590px;
 }
 
 .input-block_hide{
