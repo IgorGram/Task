@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+
+    <title>Task</title>
+</head>
+<body id="body">
+    <div class="line">
+        <span id="firstNumber">7</span>
+        <span>+</span>
+        <span id="secondNumber">4</span>
+        <span>=</span>
+            <input type="text" class="input-block-sum input-block_hide" value="?" id="sum"/>
+    </div>
+
+    <div class="img">
+      <!--  <div class="number-block number-block_display">
+            <span class="inner-number-block" id="myspan"></span>
+        </div>-->
+        <input type="text" class="input-block first-input_position focused" id="inputFirst">
+        <canvas class="canvas-first" width="275" height=150" id=firstCanvas>
+        </canvas>
+        <input type="text" class="input-block second-input_position input-block_hide" id="inputSecond">
+        <canvas class="canvas-second" width="155" height=100" id=secondCanvas>
+        </canvas>
+        <img src="img/sprite.png">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

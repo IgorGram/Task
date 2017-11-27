@@ -1,0 +1,74 @@
+.line{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40px;
+}
+.img{
+	margin-top: 200px;
+}
+.piece{
+	width: 39px;
+	height: 18px;
+	border: 1px solid;
+	display: inline-block;
+}
+.image-cover{
+	width: 875px;
+}
+
+body{
+}
+.canvas-first{
+	position: relative;
+	left: 507px;
+	top: -62px;
+}
+
+.canvas-second{
+	position: relative;
+	left: 468px;
+	top:-62px;
+}
+.input-block{
+	width: 15px;
+	height: 20px;
+	padding: 6px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 10px;
+	font-size: x-large;
+	border: 2px solid gray;
+}
+
+.input-block-sum{
+	width: 50px;
+	height: 20px;
+	padding: 10px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 10px;
+	font-size: 40px;
+	border: 2px solid gray;
+}
+.first-input_position{
+	position: relative;
+	top: -250px;
+	left: 655px;
+}
+.second-input_position{
+	position: relative;
+	top: -180px;
+	left: 570px;
+}
+
+.input-block_hide{
+	border: 0;
+}
+
+.number_wrong{
+	color: red;
+}
+
+.span-number_wrong{
+	background-color: yellow;
+}
